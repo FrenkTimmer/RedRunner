@@ -51,6 +51,9 @@ namespace RedRunner
         private bool m_GameRunning = false;
         private bool m_AudioEnabled = true;
 
+        public UnityEvent firstStepsAchievement;
+        private bool firstStepsUnlocked = false;
+
         /// <summary>
         /// This is my developed callbacks compoents, because callbacks are so dangerous to use we need something that automate the sub/unsub to functions
         /// with this in-house developed callbacks feature, we garantee that the callback will be removed when we don't need it.
@@ -182,6 +185,7 @@ namespace RedRunner
                 if (m_MainCharacter.transform.position.x > m_StartScoreX && m_MainCharacter.transform.position.x > m_Score)
                 {
                     m_Score = m_MainCharacter.transform.position.x;
+                    CheckAchievements();
                     if (OnScoreChanged != null)
                     {
                         OnScoreChanged(m_Score, m_HighScore, m_LastScore);
@@ -267,6 +271,15 @@ namespace RedRunner
                 position.x += 1.28f;
                 character.transform.position = position;
                 character.Reset();
+            }
+        }
+
+        public void CheckAchievements()
+        {
+            if (m_Score >= 100 && firstStepsUnlocked == false && firstStepsAchievement != null)
+            {
+                firstStepsAchievement.Invoke();
+                firstStepsUnlocked = true;
             }
         }
 
