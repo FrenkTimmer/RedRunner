@@ -13,7 +13,7 @@ using RedRunner.TerrainGeneration;
 
 namespace RedRunner
 {
-    public sealed class GameManager : MonoBehaviour
+    public sealed class GameManager : Subject
     {
         public delegate void AudioEnabledHandler(bool active);
 
@@ -51,8 +51,8 @@ namespace RedRunner
         private bool m_GameRunning = false;
         private bool m_AudioEnabled = true;
 
-        public UnityEvent firstStepsAchievement;
         private bool firstStepsUnlocked = false;
+        private string poiName;
 
         /// <summary>
         /// This is my developed callbacks compoents, because callbacks are so dangerous to use we need something that automate the sub/unsub to functions
@@ -276,9 +276,10 @@ namespace RedRunner
 
         public void CheckAchievements()
         {
-            if (m_Score >= 100 && firstStepsUnlocked == false && firstStepsAchievement != null)
+            if (m_Score >= 100 && firstStepsUnlocked == false)
             {
-                firstStepsAchievement.Invoke();
+                poiName = "First Steps";
+                Notify(poiName, NotificationType.AchievementUnlocked);
                 firstStepsUnlocked = true;
             }
         }
