@@ -55,5 +55,9 @@ public class FallingSaw : Enemy
         {
             SawPool.Instance.ReturnToPool(this);
         }
+        if (FindObjectOfType<RedCharacter>().IsDead.Value)
+        {
+            SawPool.Instance.ReturnToPool(this);
+        }
     }
 }

@@ -2,28 +2,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RedRunner.Characters;
 
 public class SawPooled : MonoBehaviour
 {
 
     [SerializeField]
     private float spawnRate = 2f;
-    private float spawnTimer = 0;
-    // Start is called before the first frame update
+    private float spawnRateTimer = 0;
+    private float triggerTimer = 0;
+    private float triggerTime = 5f;
+    public bool allowedToSpawn = false;
+   
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
-    {   
-        spawnTimer += Time.deltaTime;
-        if (spawnTimer >= spawnRate)
-        {
-            spawnTimer = 0;
-            Spawn();
-        }
+    {
+        SpawnTiming();
     }
 
     private void Spawn()
@@ -33,4 +31,36 @@ public class SawPooled : MonoBehaviour
         saw.transform.position = new Vector3(transform.position.x, transform.position.y + UnityEngine.Random.Range(-10f, 10f), 0);
         saw.gameObject.SetActive(true);
     }
+
+    private void SpawnTiming()
+    {
+        if (FindObjectOfType<RedCharacter>().IsDead.Value)
+        {
+            allowedToSpawn = false;
+        }
+        if (allowedToSpawn)
+        {
+            triggerTimer += Time.deltaTime;
+            spawnRateTimer += Time.deltaTime;
+        }
+        if(triggerTimer >= triggerTime)
+        {
+            allowedToSpawn = false;
+        }
+        
+        if (spawnRateTimer >= spawnRate)
+        {
+            spawnRateTimer = 0;
+            Spawn();
+        }
+    }
+
+    public void StartSpawning()
+    {
+        spawnRateTimer = 0;
+        triggerTimer = 0;
+        allowedToSpawn = true;
+    }
+
+
 }
