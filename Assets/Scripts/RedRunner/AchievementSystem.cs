@@ -6,9 +6,6 @@ public class AchievementSystem : Observer
 {
     private void Start()
     {
-
-        //TODO delete player prefs
-
         foreach (var poi in GameObject.FindObjectsOfType<Subject>())
         {
             poi.RegisterObserver(this);
@@ -20,8 +17,6 @@ public class AchievementSystem : Observer
     {
        if(notificationType == NotificationType.AchievementUnlocked)
         {
-           // string achievementKey = "achivement-" + value;
-
             Debug.Log("Unlocked " + value);
         }
     }
