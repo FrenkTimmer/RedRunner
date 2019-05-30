@@ -1,30 +1,57 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RedRunner.Enemies;
+using RedRunner.Characters;
 
-public class Meteor : MonoBehaviour
+public class Meteor : Enemy
 {
-    public float moveSpeed = 30f;
+    [SerializeField]
+    protected Collider2D m_Collider2D;
 
     private float lifeTime;
     private float maxLifeTime = 5f;
+    public float moveSpeed = 30f;
+
+    public override Collider2D Collider2D
+    {
+        get
+        {
+            return m_Collider2D;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision2D)
+    {
+        Character character = collision2D.collider.GetComponent<Character>();
+        if (character != null)
+        {
+            Kill(character);
+        }
+    }
+
+ 
+
+    public override void Kill(Character target)
+    {
+        target.Die(true);
+    }
 
     private void OnEnable()
     {
         lifeTime = 0f;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
+        Move();
+    }
+
+    void Move()
+    {
+        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         lifeTime += Time.deltaTime;
-        if(lifeTime > maxLifeTime)
+        if (lifeTime > maxLifeTime)
         {
             MeteorPool.Instance.ReturnToPool(this);
         }

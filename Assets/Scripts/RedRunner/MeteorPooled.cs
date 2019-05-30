@@ -30,7 +30,7 @@ public class MeteorPooled : MonoBehaviour
     {
         var met = MeteorPool.Instance.Get();
         met.transform.rotation = transform.rotation;
-        met.transform.position = new Vector3(transform.position.x + UnityEngine.Random.Range(-10f, 10f), transform.position.y, 1);
+        met.transform.position = new Vector3(transform.position.x, transform.position.y + UnityEngine.Random.Range(-10f, 10f), 0);
         met.gameObject.SetActive(true);
     }
 }
