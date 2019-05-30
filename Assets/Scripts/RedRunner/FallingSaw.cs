@@ -4,7 +4,7 @@ using UnityEngine;
 using RedRunner.Enemies;
 using RedRunner.Characters;
 
-public class Meteor : Enemy
+public class FallingSaw : Enemy
 {
     [SerializeField]
     protected Collider2D m_Collider2D;
@@ -53,7 +53,7 @@ public class Meteor : Enemy
         lifeTime += Time.deltaTime;
         if (lifeTime > maxLifeTime)
         {
-            MeteorPool.Instance.ReturnToPool(this);
+            SawPool.Instance.ReturnToPool(this);
         }
     }
 }

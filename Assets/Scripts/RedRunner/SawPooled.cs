@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeteorPooled : MonoBehaviour
+public class SawPooled : MonoBehaviour
 {
 
     [SerializeField]
@@ -28,9 +28,9 @@ public class MeteorPooled : MonoBehaviour
 
     private void Spawn()
     {
-        var met = MeteorPool.Instance.Get();
-        met.transform.rotation = transform.rotation;
-        met.transform.position = new Vector3(transform.position.x, transform.position.y + UnityEngine.Random.Range(-10f, 10f), 0);
-        met.gameObject.SetActive(true);
+        var saw = SawPool.Instance.Get();
+        saw.transform.rotation = transform.rotation;
+        saw.transform.position = new Vector3(transform.position.x, transform.position.y + UnityEngine.Random.Range(-10f, 10f), 0);
+        saw.gameObject.SetActive(true);
     }
 }
