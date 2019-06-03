@@ -76,9 +76,6 @@ namespace RedRunner.Characters
 		protected int m_CurrentFootstepSoundIndex = 0;
 		protected Vector3 m_InitialScale;
 		protected Vector3 m_InitialPosition;
-        private InputReader _inputReader;
-        private CommandProcessor _commandProcessor;
-        
 
 		#endregion
 
@@ -276,8 +273,6 @@ namespace RedRunner.Characters
 			m_Block = false;
 			m_CurrentFootstepSoundIndex = 0;
 			GameManager.OnReset += GameManager_OnReset;
-            _inputReader = GetComponent<InputReader>();
-            _commandProcessor = GetComponent<CommandProcessor>();
 		}
 
 		void Update ()
@@ -345,11 +340,6 @@ namespace RedRunner.Characters
 				}
 				m_Rigidbody2D.AddForce ( force );
 			}
-
-            if (_inputReader.ReadUndo())
-            {
-                _commandProcessor.Undo();
-            }
 		}
 
 		void LateUpdate ()
