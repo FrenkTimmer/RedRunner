@@ -20,12 +20,12 @@ namespace RedRunner.Characters
 		protected float m_MaxRunSpeed = 8f;
 		[SerializeField]
 		protected float m_RunSmoothTime = 5f;
-		[SerializeField]
-		protected float m_RunSpeed = 5f;
-		[SerializeField]
-		protected float m_WalkSpeed = 1.75f;
-		[SerializeField]
-		protected float m_JumpStrength = 10f;
+		
+		public float m_RunSpeed = 5f;
+		
+		public float m_WalkSpeed = 1.75f;
+
+		public float m_JumpStrength = 10f;
 		[SerializeField]
 		protected string[] m_Actions = new string[0];
 		[SerializeField]
