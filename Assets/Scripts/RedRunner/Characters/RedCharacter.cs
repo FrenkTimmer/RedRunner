@@ -20,7 +20,9 @@ namespace RedRunner.Characters
 		protected float m_MaxRunSpeed = 8f;
 		[SerializeField]
 		protected float m_RunSmoothTime = 5f;
-		
+
+        public bool m_PutFlagDown = false;
+
 		public float m_RunSpeed = 5f;
 		
 		public float m_WalkSpeed = 1.75f;
@@ -423,25 +425,25 @@ namespace RedRunner.Characters
 		{
 			if ( !IsDead.Value )
 			{
-				float speed = m_CurrentRunSpeed;
-//				if ( CrossPlatformInputManager.GetButton ( "Walk" ) )
-//				{
-//					speed = m_WalkSpeed;
-				//				}
-				Vector2 velocity = m_Rigidbody2D.velocity;
+                float speed = m_CurrentRunSpeed;
+                if (CrossPlatformInputManager.GetButton("Walk"))
+                {
+                    speed = m_WalkSpeed;
+                }
+                Vector2 velocity = m_Rigidbody2D.velocity;
 				velocity.x = speed * horizontalAxis;
 				m_Rigidbody2D.velocity = velocity;
 				if ( horizontalAxis > 0f )
 				{
-					Vector3 scale = transform.localScale;
-					scale.x = Mathf.Sign ( horizontalAxis );
-					transform.localScale = scale;
+				    Vector3 scale = transform.localScale;
+				    scale.x = Mathf.Sign ( horizontalAxis );
+				    transform.localScale = scale;
 				}
 				else if ( horizontalAxis < 0f )
 				{
-					Vector3 scale = transform.localScale;
-					scale.x = Mathf.Sign ( horizontalAxis );
-					transform.localScale = scale;
+				    Vector3 scale = transform.localScale;
+				    scale.x = Mathf.Sign ( horizontalAxis );
+				    transform.localScale = scale;
 				}
 			}
 		}
@@ -470,19 +472,24 @@ namespace RedRunner.Characters
 
 		public override void Die ( bool blood )
 		{
-			if ( !IsDead.Value )
-			{
+            if (m_PutFlagDown)
+            {
+                FindObjectOfType<PlayerStateManager>().RestorePlayerState();
+            }
+            else if ( !IsDead.Value )
+            {
                 IsDead.Value = true;
-				m_Skeleton.SetActive ( true, m_Rigidbody2D.velocity );
-				if ( blood )
-				{
-					ParticleSystem particle = Instantiate<ParticleSystem> ( 
+                m_Skeleton.SetActive ( true, m_Rigidbody2D.velocity );
+                if ( blood )
+                {
+                    ParticleSystem particle = Instantiate<ParticleSystem> ( 
 						                          m_BloodParticleSystem,
 						                          transform.position,
 						                          Quaternion.identity );
-					Destroy ( particle.gameObject, particle.main.duration );
-				}
-				CameraController.Singleton.fastMove = true;
+                    Destroy ( particle.gameObject, particle.main.duration );
+                }
+                CameraController.Singleton.fastMove = true;
+                
 			}
 		}
 

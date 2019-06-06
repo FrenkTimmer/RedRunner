@@ -11,7 +11,6 @@ public class AchievementSystem : Observer
             poi.RegisterObserver(this);
         }
 
-        
     }
     public override void OnNotify(object value, NotificationType notificationType)
     {
