@@ -21,6 +21,8 @@ namespace RedRunner.Characters
 		[SerializeField]
 		protected float m_RunSmoothTime = 5f;
 
+        protected GameObject[] flags;
+
         public bool m_PutFlagDown = false;
 
 		public float m_RunSpeed = 5f;
@@ -42,7 +44,7 @@ namespace RedRunner.Characters
 		[SerializeField]
 		protected Animator m_Animator;
 		[SerializeField]
-		protected GroundCheck m_GroundCheck;
+		public GroundCheck m_GroundCheck;
 		[SerializeField]
 		protected ParticleSystem m_RunParticleSystem;
 		[SerializeField]
@@ -448,7 +450,17 @@ namespace RedRunner.Characters
 			}
 		}
 
-		public override void Jump ()
+        private void DestroyAllObjects()
+        {
+            flags = GameObject.FindGameObjectsWithTag("Flag");
+
+            for (var i = 0; i < flags.Length; i++)
+            {
+                Destroy(flags[i]);
+            }
+        }
+
+        public override void Jump ()
 		{
 			if ( !IsDead.Value )
 			{
@@ -478,6 +490,7 @@ namespace RedRunner.Characters
             }
             else if ( !IsDead.Value )
             {
+                DestroyAllObjects();
                 IsDead.Value = true;
                 m_Skeleton.SetActive ( true, m_Rigidbody2D.velocity );
                 if ( blood )

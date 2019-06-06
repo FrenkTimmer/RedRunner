@@ -57,7 +57,7 @@ public class Flag : Collectable
 
     private void Update()
     {
-        if(Input.GetButtonDown(pickUpButton) && pickedUp == true)
+        if(Input.GetButtonDown(pickUpButton) && pickedUp == true && FindObjectOfType<RedCharacter>().m_GroundCheck.IsGrounded)
         {
             DetachFlag();
         }
@@ -73,6 +73,7 @@ public class Flag : Collectable
             gameObject.GetComponent<Collider2D>().enabled = true;
             gameObject.transform.parent = null;
             gameObject.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+            gameObject.transform.rotation = Quaternion.identity;
             stateSet = true;
         }
       
