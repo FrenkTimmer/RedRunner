@@ -55,7 +55,7 @@ public class AddHat : Collectable
         head = new RedRunnerHead();
         if (isJumphat && !isSpeedHat)
         {
-            jumpHat = new JumpHat(head, 5f);
+            jumpHat = new JumpHat(head, 2f);
         }
         if (isSpeedHat && !isJumphat)
         {
