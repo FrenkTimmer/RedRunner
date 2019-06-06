@@ -67,7 +67,7 @@ public class Flag : Collectable
     {
         if(stateSet == false)
         {
-            GameObject.FindObjectOfType<PlayerStateManager>().SetPlayerState(GameObject.FindGameObjectWithTag("Player"));
+            GameObject.FindObjectOfType<PlayerStateManager>().SetPlayerState(GameObject.FindGameObjectWithTag("Player").transform.position);
             FindObjectOfType<RedCharacter>().m_PutFlagDown = true;
             pickedUp = false;
             gameObject.GetComponent<Collider2D>().enabled = true;

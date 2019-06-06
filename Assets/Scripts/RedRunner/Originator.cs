@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Originator : MonoBehaviour
 {
-    private GameObject playerState;
+    private Vector2 playerState;
 
-    public GameObject PlayerState
+    public Vector2 PlayerState
     {
         get { return playerState; }
         set

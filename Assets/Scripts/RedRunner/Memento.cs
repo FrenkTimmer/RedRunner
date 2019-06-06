@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Memento : MonoBehaviour
 {
-    private GameObject playerState;
+    private Vector2 playerState;
 
-    public Memento(GameObject state)
+    public Memento(Vector2 state)
     {
         this.playerState = state;
     }
 
-    public GameObject PlayerState
+    public Vector2 PlayerState
     {
         get { return playerState; }
     }
