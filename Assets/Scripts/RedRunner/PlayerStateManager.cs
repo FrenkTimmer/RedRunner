@@ -7,7 +7,7 @@ public class PlayerStateManager : MonoBehaviour
     private static PlayerStateManager singleton;
     Originator originator = new Originator();
     CareTaker careTaker = new CareTaker();
-    public Vector2 player;
+    public GameObject player;
     public Vector2 restoredPlayer;
 
 
@@ -27,7 +27,7 @@ public class PlayerStateManager : MonoBehaviour
         //player = GameObject.FindGameObjectWithTag("Player").transform.position;
     }
 
-    public void SetPlayerState(Vector2 player)
+    public void SetPlayerState(GameObject player)
     {
         originator.PlayerState = player;
         this.player = player;
@@ -37,7 +37,7 @@ public class PlayerStateManager : MonoBehaviour
     public void RestorePlayerState()
     {
         originator.SetMemento(careTaker.Memento);
-        GameObject.FindGameObjectWithTag("Player").transform.position = originator.PlayerState;
+        GameObject.FindGameObjectWithTag("Player").transform.position = originator.PlayerState.transform.position;
 
     }
 }

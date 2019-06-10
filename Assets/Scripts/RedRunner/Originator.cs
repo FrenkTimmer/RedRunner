@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Originator : MonoBehaviour
 {
-    private Vector2 playerState;
+    private GameObject playerState;
 
-    public Vector2 PlayerState
+    public GameObject PlayerState
     {
         get { return playerState; }
         set
@@ -23,7 +23,7 @@ public class Originator : MonoBehaviour
 
     public void SetMemento(Memento memento)
     {
-        PlayerState = memento.PlayerState;
+        PlayerState.transform.position = memento.PlayerState;
     }
 
 }

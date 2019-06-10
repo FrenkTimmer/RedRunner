@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Memento : MonoBehaviour
 {
-    private Vector2 playerState;
+    private Vector2 playerStateLocation;
 
-    public Memento(Vector2 state)
+    public Memento(GameObject state)
     {
-        this.playerState = state;
+        this.playerStateLocation = state.transform.position;
     }
 
     public Vector2 PlayerState
     {
-        get { return playerState; }
+        get { return playerStateLocation; }
     }
 }
