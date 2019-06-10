@@ -14,6 +14,20 @@ namespace RedRunner.Enemies
 
 		public abstract void Kill ( Character target );
 
-	}
+        protected Transform enemyObj;
+
+        //The different states the enemy can be in
+        protected enum EnemyFSM
+        {
+            Attack,
+            Idle,
+        }
+
+        //Update the enemy by giving it a new state
+        public virtual void UpdateEnemy(Transform playerObj)
+        {
+
+        }
+    }
 
 }
