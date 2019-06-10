@@ -28,19 +28,6 @@ namespace RedRunner.Enemies
         {
 
         }
-
-        //Do something based on a state
-        protected void DoAction(Transform playerObj, EnemyFSM enemyMode)
-        {
-            switch (enemyMode)
-            {
-                case EnemyFSM.Attack:
-
-                    break;
-                case EnemyFSM.Idle:
-                    break;
-            }
-        }
     }
 
 }

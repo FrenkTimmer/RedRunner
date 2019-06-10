@@ -7,22 +7,24 @@ using UnityEngine;
 public class EnemyStateManager : MonoBehaviour
 {
     public GameObject playerObj;
-    public GameObject dimmedomObj;
-
-
     //A list that will hold all enemies
-    List<Enemy> enemies = new List<Enemy>();
+    public List<Enemy> enemies = new List<Enemy>();
 
     private void Start()
     {
         Invoke("AddEnemies",1f);
     }
 
-    void AddEnemies()
+    public void Reset()
     {
-    //Add the enemies we have
-    
-    foreach (var dom in GameObject.FindObjectsOfType<Dimmedom>())
+        Debug.Log("RESET");
+        Invoke("AddEnemies", 0f);
+    }
+
+    public void AddEnemies()
+    {
+        enemies.Clear();
+        foreach (var dom in GameObject.FindObjectsOfType<Dimmedom>())
         {
             enemies.Add(new Dimmedom(dom.transform));
         }
@@ -31,12 +33,12 @@ public class EnemyStateManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(enemies.Count);
         //Update all enemies to see if they should change state and move/attack player
-            for (int i = 0; i < enemies.Count; i++)
+        for (int i = 0; i < enemies.Count; i++)
         {
+           // if(enemies[i] != null)
             enemies[i].UpdateEnemy(playerObj.transform);
         }
     }
-    }
+}
 

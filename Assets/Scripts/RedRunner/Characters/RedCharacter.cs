@@ -534,6 +534,7 @@ namespace RedRunner.Characters
 		{
 			transform.position = m_InitialPosition;
 			Reset ();
+            FindObjectOfType<EnemyStateManager>().Reset();
 		}
 
 		void Skeleton_OnActiveChanged ( bool active )
