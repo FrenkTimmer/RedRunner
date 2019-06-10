@@ -34,14 +34,16 @@ public class Dimmedom : Enemy
     public override void UpdateEnemy(Transform playerObj)
     {
         //The distance between the Creeper and the player
-        float distance = (base.enemyObj.position - playerObj.position).magnitude;
+        Debug.Log(playerObj);
+        float distance = Vector2.Distance(base.enemyObj.position, playerObj.position);
         Debug.Log(distance);
+        
 
         switch (dimmedomMode)
         {
             case EnemyFSM.Attack:
 
-                enemyObj.rotation = Quaternion.LookRotation(playerObj.position - enemyObj.position);
+                enemyObj.rotation = Quaternion.LookRotation(playerObj.position - base.enemyObj.position);
                 enemyObj.Translate(enemyObj.forward * 1f * Time.deltaTime);
 
                 if (distance > 5f)

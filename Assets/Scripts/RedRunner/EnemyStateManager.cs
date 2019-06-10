@@ -23,7 +23,7 @@ public class EnemyStateManager : MonoBehaviour
         
         foreach (var dom in GameObject.FindObjectsOfType<Dimmedom>())
             {
-                enemies.Add(dom);
+                enemies.Add(new Dimmedom(dom.transform));
             }
         }
 
