@@ -21,9 +21,9 @@ public class Originator : MonoBehaviour
         return (new Memento(playerState));
     }
 
-    public void SetMemento(Memento memento)
+    public void RestoreMemento(Memento memento)
     {
-        PlayerState.transform.position = memento.PlayerState;
+        PlayerState.transform.position = memento.PlayerStateLocation;
     }
 
 }

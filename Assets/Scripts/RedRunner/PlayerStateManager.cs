@@ -36,7 +36,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public void RestorePlayerState()
     {
-        originator.SetMemento(careTaker.Memento);
+        originator.RestoreMemento(careTaker.Memento);
         GameObject.FindGameObjectWithTag("Player").transform.position = originator.PlayerState.transform.position;
 
     }

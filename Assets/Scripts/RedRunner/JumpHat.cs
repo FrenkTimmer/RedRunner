@@ -22,7 +22,6 @@ public class JumpHat : HeadDecorator
         }
     }
 
-
     public override void Use()
     {
         Debug.Log("JumpHat");

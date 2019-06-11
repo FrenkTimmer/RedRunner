@@ -11,7 +11,7 @@ public class Memento : MonoBehaviour
         this.playerStateLocation = state.transform.position;
     }
 
-    public Vector2 PlayerState
+    public Vector2 PlayerStateLocation
     {
         get { return playerStateLocation; }
     }
