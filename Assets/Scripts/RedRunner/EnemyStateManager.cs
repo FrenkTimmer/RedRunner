@@ -15,7 +15,7 @@ public class EnemyStateManager : MonoBehaviour
         Invoke("AddEnemies",1f);
     }
 
-    public void Reset()
+    public void ResetEnemy()
     {
         Debug.Log("RESET");
         Invoke("AddEnemies", 0f);
@@ -36,7 +36,7 @@ public class EnemyStateManager : MonoBehaviour
         //Update all enemies to see if they should change state and move/attack player
         for (int i = 0; i < enemies.Count; i++)
         {
-           // if(enemies[i] != null)
+           // if (enemies[i] != null)
             enemies[i].UpdateEnemy(playerObj.transform);
         }
     }

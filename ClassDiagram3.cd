@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BayatGames.SaveGameFree.Examples.ExampleMoveObject" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Auto Save\ExampleMoveObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Examples.ExampleSaveCustom" Collapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAACACAAAAAAAIAAABIAAAAABAAAgAAAAAAAg=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Save Custom\ExampleSaveCustom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Examples.ExampleSavePosition" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgJAAACAAAAAAIAAAAAAAAAAAAABAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Save Position\ExampleSavePosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Examples.ExampleSaveRotation" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgJAAACAAAAAAIAAAAAAAAAAAAABAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Save Rotation\ExampleSaveRotation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Examples.ExampleSaveScale" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgJAAACAAAAAAIAAAAAAAAAAAAABAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Save Scale\ExampleSaveScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Examples.ExampleSaveWeb" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgMAAACAAAAAAIAAABAEEAAAIAABAAAAAAgAAAgg=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Save Web\ExampleSaveWeb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Examples.SerializerDropdown" Collapsed="true">
+    <Position X="25.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAACAAAAAAAAEAAAAgAAAAAAAEAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\SaveGameFree\Examples\Shared\Scripts\SerializerDropdown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Encoders.SaveGameSimpleEncoder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAhAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Encoders\SaveGameSimpleEncoder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.SaveGame" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAMgIAAAABAACQgQAAAAAEIIgEAgAgBAAABABEABEA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\SaveGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.SaveGameAuto" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAAgNAAICAAAAACAAQACAAECAAIAKgMoCBIAQAACkg=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\SaveGameAuto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.SaveGameWeb" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAYgMABKABAASAAAUoAhQAognCBgAADABEBAQAABQA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\SaveGameWeb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Serializers.SaveGameBinarySerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Serializers\SaveGameBinarySerializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Serializers.SaveGameJsonSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Serializers\SaveGameJsonSerializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Serializers.SaveGameXmlSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Serializers\SaveGameXmlSerializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BayatGames.SaveGameFree.Types.MeshSave" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAABAAAQAAAAAQAACAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\MeshSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraControl" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAxAAAAhEKAAABAACAAANAAAAAAAAkEAAAAIBAAAgAg=</HashCode>
+      <FileName>Assets\Scripts\CameraControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AchievementSystem" Collapsed="true">
+    <Position X="14.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\AchievementSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddHat" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAkAAAAgAACAAAEAAIAAACAAgAAUgIAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\AddHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseHead">
+    <Position X="3" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\BaseHead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CareTaker" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\CareTaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dimmedom" Collapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAgAAEAAAI=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Dimmedom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyStateManager" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACACAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\EnemyStateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FallingSaw" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAEMAAQAAQAAAAAAAAAAAAAAABAAAgAAEACAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\FallingSaw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FallingSawTrigger" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAgAAEAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\FallingSawTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Flag" Collapsed="true">
+    <Position X="0.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAABAAkAAAAAAAAIAAEAAABAAAAAgAgUAIEE=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Flag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeadDecorator">
+    <Position X="4" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\HeadDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JumpHat">
+    <Position X="2.5" Y="14.25" Width="1.5" />
+    <InheritanceLine Type="HeadDecorator" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="13.877" />
+        <Point X="4.75" Y="15.125" />
+        <Point X="4" Y="15.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAIAAAAAAEAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\JumpHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Memento" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Memento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Observer" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Observer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Subject" Collapsed="true">
+    <Position X="9.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAIABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Observer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Originator" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAQAAAAAAAAABEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Originator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerStateManager" Collapsed="true">
+    <Position X="27.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACCAAAIAAAAAAAAAAQAAAAEBAAAAAAAAAUA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\PlayerStateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointOfInterest" Collapsed="true">
+    <Position X="11.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\PointOfInterest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunnerHead">
+    <Position X="1.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\RedRunnerHead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SawPool" Collapsed="true">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAAIAAABAAAAAAAAgAAAAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\SawPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SawPooled" Collapsed="true">
+    <Position X="24" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAECCAAAAEAAAAAAAAAAAIIAAAAAAAABAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\SawPooled.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpeedHat">
+    <Position X="5.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAQAAAEAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\SpeedHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Property&lt;T&gt;" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAggBAAAAAAAAAAAAEAAAAAAAgAEAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Utils\Property.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PropertyEvent" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAABAAAAAAAAAAAAEAAAAAAAAAABAQAA=</HashCode>
+      <FileName>Assets\Scripts\Utils\PropertyEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PropertyEvent&lt;T&gt;" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgBAAAAAAAAAAAAEAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Utils\PropertyEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.AudioManager" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAEIACAAEAQAAAgABAkAAiUAIQUAEAQEAhABBGI=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\AudioManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.GameManager" Collapsed="true">
+    <Position X="8.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAcSgFIACCABFgAAwCQAEAggEIBAQAEAAChCQZAwgUA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Skeleton" Collapsed="true">
+    <Position X="27.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAQAAAAAAAIQCAAEAIBBACEAAAAQABgAAEQgIAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Skeleton\Skeleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UIManager" Collapsed="true">
+    <Position X="25.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQAAAAAACAAAAAAAAAMAAgAMABACAEiwAACAQAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Characters.Character" Collapsed="true">
+    <Position X="11.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAFAAgAIoAADDAwgAEEkAQJAAAQAAAMIAAAAAUACAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Characters\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Characters.RedCharacter" Collapsed="true">
+    <Position X="11.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEQFAQsBIokSjLCwiBEEawQJIQAQJgAMIA8AAAUADEQ=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Characters\RedCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Collectables.Chest" Collapsed="true">
+    <Position X="5.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAQABQAAFAkESIAECgAIghUAAEDAgAAAgAAUAoAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Collectables\Chest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Collectables.Coin" Collapsed="true">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAkAQAAAAAAAggEAAAAAgAAAgAAUAIAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Collectables\Coin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Collectables.CoinRigidbody2D" Collapsed="true">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAiAACAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Collectables\CoinRigidbody2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Collectables.Collectable" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAsAAAAAAAAAAAEAAAAAAAAAgAAUAIAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Collectables\Collectable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Enemies.Enemy" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAI=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Enemies.Eye" Collapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EkUMBAABAASIAAAAAAAAAAADAKAAAgAAAAAAAABAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Eye.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Enemies.Mace" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQAAAEAABAAUCAAAAAAAgAAAAAAAAAAkAQEAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Mace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Enemies.Saw" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQEAgAAAGAAAAAQAAAAAAAAAAAAAgAACAAgAAEAMAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Saw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Enemies.Spike" Collapsed="true">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Spike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Enemies.Water" Collapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAQAAAAAAAAAEAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Enemies\Water.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.TerrainGeneration.BackgroundBlock" Collapsed="true">
+    <Position X="12.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAABEAAAAAAAAAAAAARAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\BackgroundBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.TerrainGeneration.Block" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAQAEAAMAAAAAAAACAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\Block.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.TerrainGeneration.DefaultBlock" Collapsed="true">
+    <Position X="10.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\DefaultBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.TerrainGeneration.DefaultTerrainGenerator" Collapsed="true">
+    <Position X="13.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\DefaultTerrainGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.TerrainGeneration.TerrainGenerationSettings" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAYAAC4AAAACAAAAAUQIAEEAAAAAAEAAwAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\TerrainGenerationSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.TerrainGeneration.TerrainGenerator" Collapsed="true">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQBAAAgBAACFgBAAAAABFogQEARUSHEoQAAIEACAEQ=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\TerrainGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIButton" Collapsed="true">
+    <Position X="8.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UICoinImage" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAgAAAAAgAACAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UICoinImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UICoinText" Collapsed="true">
+    <Position X="0.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UICoinText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIHighScoreText" Collapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIHighScoreText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIImageRandom" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIImageRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UILastScoreText" Collapsed="true">
+    <Position X="24" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UILastScoreText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIScoreText" Collapsed="true">
+    <Position X="27.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAIAAAAAAAAAAAEAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScoreText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.EndScreen" Collapsed="true">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAkAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScreen\EndScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.InGameScreen" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScreen\InGameScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.LoadingScreen" Collapsed="true">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScreen\LoadingScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.PauseScreen" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAkAAAAAAAAAAAAAAQAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScreen\PauseScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.StartScreen" Collapsed="true">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAkAAAAAAQAAAAAAgAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScreen\StartScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIScreen" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAQAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIScreen\UIScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIShareButtons" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAgCAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIShareButtons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UISoundButton" Collapsed="true">
+    <Position X="8.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAEFA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UISoundButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIText" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UIWindow" Collapsed="true">
+    <Position X="18.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQAAAAAAIAAIAgBQAAhAEAAAAAAAACACAACAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UI\UIWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.UI.UtilsUI" Collapsed="true">
+    <Position X="20.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Utils\UtilsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Utilities.CameraController" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAACgAAIAAAAAAAAgQAAAAAgGICAAEABAAAEE=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Utilities\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Utilities.Extensions" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABQ=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Utilities\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Utilities.GroundCheck" Collapsed="true">
+    <Position X="27.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAARAAQAAAABAAAAAAAAAIAAAAACAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Utilities\GroundCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Utilities.PathDefinition" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQEAAAAQAAAoAAAQAAQAAAAAAAAIAgAAACRAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Utilities\PathDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Utilities.PathFollower" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAQQAgCJAAAAAAAAAAAAEAABAAiQAYAIABBEkQkA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Utilities\PathFollower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedRunner.Utilities.PathPoint" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAgAAAAAAQQAEAAAAACAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\Utilities\PathPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="BayatGames.SaveGameFree.Types.Color32Save" Collapsed="true">
+    <Position X="18.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAQABABAAABA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\Color32Save.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BayatGames.SaveGameFree.Types.ColorSave" Collapsed="true">
+    <Position X="20.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAoAQABAgAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\ColorSave.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BayatGames.SaveGameFree.Types.QuaternionSave" Collapsed="true">
+    <Position X="22.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAhgAQAAgAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\QuaternionSave.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BayatGames.SaveGameFree.Types.Vector2Save" Collapsed="true">
+    <Position X="24" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACAAAAAACABggAAABgAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\Vector2Save.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BayatGames.SaveGameFree.Types.Vector3Save" Collapsed="true">
+    <Position X="25.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACAAAAAACABggAAABgAQAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\Vector3Save.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BayatGames.SaveGameFree.Types.Vector4Save" Collapsed="true">
+    <Position X="27.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACAAAAAACABggAAAhgAQAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Types\Vector4Save.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RedRunner.TerrainGeneration.BackgroundLayer" Collapsed="true">
+    <Position X="17" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAABgAAAAAgAAAAAAAEAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\TerrainGeneration\BackgroundLayer.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="BayatGames.SaveGameFree.Encoders.ISaveGameEncoder" Collapsed="true">
+    <Position X="17" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Encoders\ISaveGameEncoder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BayatGames.SaveGameFree.Serializers.ISaveGameSerializer" Collapsed="true">
+    <Position X="18.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\Serializers\ISaveGameSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BayatGames.SaveGameFree.SaveGamePath" Collapsed="true">
+    <Position X="18.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\SaveGameFree\Scripts\SaveGame.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NotificationType" Collapsed="true">
+    <Position X="17" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\AchievementSystem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RedRunner.UIScreenInfo" Collapsed="true">
+    <Position X="20.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAQgAAACAA=</HashCode>
+      <FileName>Assets\Scripts\RedRunner\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
